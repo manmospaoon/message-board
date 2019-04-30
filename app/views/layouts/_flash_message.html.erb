@@ -1,0 +1,8 @@
+<% flash.each do |message_type,message| %>
+<%# 成功の場合はmessage_typeには:success, messageには'正常に投稿されました'が代入される。 %>
+
+<div>
+    <%= message %>
+</div>
+
+<% end %>
