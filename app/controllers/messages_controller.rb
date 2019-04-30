@@ -54,7 +54,7 @@ class MessagesController < ApplicationController
   end  
   
   def message_params
-    params.require(:message).permit(:content)
+    params.require(:message).permit(:content,:title)
     #params.require(:message)でMessageモデルのフォームから得られるデータに関するものだと示す。
     #permit(:content)でcontentカラムだけを選択。
   end
